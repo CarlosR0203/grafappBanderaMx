@@ -29,7 +29,7 @@ redRange.addEventListener("input", function() {
     redFlag.style.backgroundColor = hexColor;
     redHex.textContent = hexColor.toUpperCase();
 });
-
+//
 // Inicialización
 window.onload = function() {
     greenRange.dispatchEvent(new Event("input"));
