@@ -1,18 +1,43 @@
 body {
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #006847 33%, #ffffff 33%, #ffffff 66%, #ce1126 66%);
+    background-attachment: fixed;
+}
+
+/* Encabezado */
+header {
+    background-color: rgba(0,0,0,0.7);
     color: white;
 }
 
-.title {
+.main-title {
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/* Textos de colores */
+.green-text {
+    color: #006847;
+    font-weight: 700;
+}
+
+.white-text {
+    color: #ffffff;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px black;
+}
+
+.red-text {
+    color: #ce1126;
+    font-weight: 700;
 }
 
 .hex-text {
     font-weight: bold;
     font-size: 18px;
-    margin-top: 10px;
 }
 
 /* Bandera */
@@ -21,10 +46,8 @@ body {
     width: 100%;
     max-width: 900px;
     height: 260px;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0px 15px 40px rgba(0,0,0,0.6);
-    transition: all 0.3s ease;
+    border: 5px solid #000;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
 .flag-section {
@@ -33,29 +56,27 @@ body {
 }
 
 .white-section {
-    background: #FFFFFF;
+    background-color: #ffffff;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
-/* Imagen escudo */
 .escudo-img {
     width: 150px;
     height: auto;
-    object-fit: contain;
-    filter: drop-shadow(0px 8px 15px rgba(0,0,0,0.5));
 }
 
-/* Hover elegante */
-.flag-container:hover {
-    transform: scale(1.02);
+/* Autores */
+.authors {
+    color: #000;
+    font-weight: 600;
+    background-color: rgba(255,255,255,0.8);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
 }
-
 
 .authors p {
     margin: 5px 0;
-    font-weight: 500;
-    font-size: 18px;
-    letter-spacing: 1px;
 }

@@ -14,30 +14,31 @@
 </head>
 <body>
 
-<div class="container text-center py-5">
+<header class="text-center py-4">
+    <h1 class="main-title">Bandera de México</h1>
+</header>
 
-    <h1 class="title mb-5">🇲🇽 Bandera de México</h1>
+<div class="container text-center py-4">
 
-    <div class="row mb-4">
-        <!-- Verde -->
+    <div class="row mb-4 align-items-center">
+
         <div class="col-md-4">
-            <h5>Esperanza</h5>
+            <h5 class="green-text">Esperanza</h5>
             <input type="range" id="greenRange" class="form-range" min="0" max="255" value="128">
             <p id="greenHex" class="hex-text">#008000</p>
         </div>
 
-        <!-- Blanco -->
         <div class="col-md-4">
-            <h5>Unidad</h5>
+            <h5 class="white-text">Unidad</h5>
             <p class="hex-text">#FFFFFF</p>
         </div>
 
-        <!-- Rojo -->
         <div class="col-md-4">
-            <h5>Sangre de nuestros héroes nacionales</h5>
+            <h5 class="red-text">Sangre de nuestros héroes nacionales</h5>
             <input type="range" id="redRange" class="form-range" min="0" max="255" value="128">
             <p id="redHex" class="hex-text">#800000</p>
         </div>
+
     </div>
 
     <!-- Bandera -->
@@ -51,7 +52,6 @@
         <div id="redFlag" class="flag-section"></div>
     </div>
 
-    
     <div class="mt-5 authors">
         <p>Pérez Díaz Juan Pablo - 23200938</p>
         <p>Reyes Azpiroz Carlos - 23200557</p>
